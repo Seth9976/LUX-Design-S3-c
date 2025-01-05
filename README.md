@@ -52,6 +52,39 @@ luxai-s3 "make run" "make run" --out=replay.json
 3. 使用`Observation`结构体获取游戏状态
 4. 返回`Actions`结构体指定单位行动
 
+## 构建说明
+
+### Windows (MSYS2)
+
+1. 安装MSYS2并打开MSYS2 MINGW64 终端
+2. 安装依赖:
+```bash
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-json-c make
+```
+3. 编译:
+```bash
+make
+```
+
+### Linux (Ubuntu/Debian)
+
+1. 安装依赖:
+```bash
+sudo apt-get update
+sudo apt-get install build-essential libjson-c-dev
+```
+2. 编译:
+```bash
+make
+```
+
+### Kaggle 环境
+
+Kaggle环境已预装gcc和必要库,直接编译即可:
+```bash
+make
+```
+
 ## 许可证
 
 Apache License 2.0
